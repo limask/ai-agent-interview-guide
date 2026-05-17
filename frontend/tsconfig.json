@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    // 编译目标：ES2020
+    "target": "ES2020",
+    // 使用 define 定义类字段
+    "useDefineForClassFields": true,
+    // 包含的库：ES2020、DOM、DOM.Iterable
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    // 模块系统：ESNext
+    "module": "ESNext",
+    // 跳过库文件的类型检查（提升编译速度）
+    "skipLibCheck": true,
+    // 模块解析策略：bundler（适合 Vite）
+    "moduleResolution": "bundler",
+    // 允许导入 TypeScript 扩展名
+    "allowImportingTsExtensions": true,
+    // 允许导入 JSON 模块
+    "resolveJsonModule": true,
+    // 隔离模块编译
+    "isolatedModules": true,
+    // 不生成输出文件（Vite 负责打包）
+    "noEmit": true,
+    // JSX 转换方式：react-jsx（React 17+ 新特性）
+    "jsx": "react-jsx",
+    // 启用严格模式
+    "strict": true,
+    // 报告未使用的局部变量
+    "noUnusedLocals": true,
+    // 报告未使用的参数
+    "noUnusedParameters": true,
+    // switch 语句不允许 fall-through
+    "noFallthroughCasesInSwitch": true,
+    // 基础目录
+    "baseUrl": ".",
+    // 路径映射：@/* 映射到 ./src/*
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  // 包含的文件
+  "include": ["src"],
+  // 引用其他配置文件
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

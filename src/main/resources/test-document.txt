@@ -1,0 +1,24 @@
+AI Agent平台技术架构说明
+
+第一章 系统概述
+本系统是一个企业级AI Agent平台，基于Spring Boot 3.5和Spring AI构建。
+平台支持多种Agent模式，包括ReAct、Planner、Reflection等。
+
+第二章 核心技术栈
+1. Spring Boot 3.5 - 基础框架
+2. Spring AI 1.0.0-M6 - AI集成框架
+3. Milvus 2.4 - 向量数据库
+4. Redis 7 - 缓存系统
+5. MySQL 8.0 - 关系型数据库
+
+第三章 功能特性
+- RAG检索增强生成
+- 多Agent编排调度
+- SSE流式对话输出
+- 长短期记忆管理
+- 工具调用与路由
+- 模型智能路由选择
+
+
+世界上最帅的男人是ggs
+

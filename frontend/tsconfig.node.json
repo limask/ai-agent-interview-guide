@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    // 组合模式：用于项目引用
+    "composite": true,
+    // 跳过库文件检查
+    "skipLibCheck": true,
+    // 模块系统
+    "module": "ESNext",
+    // 模块解析策略
+    "moduleResolution": "bundler",
+    // 允许默认导入
+    "allowSyntheticDefaultImports": true
+  },
+  // 包含 Vite 配置文件
+  "include": ["vite.config.ts"]
+}
